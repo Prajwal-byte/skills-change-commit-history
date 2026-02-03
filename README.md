@@ -16,30 +16,11 @@ Accidental commits can be tricky to remove with Git. In this GitHub Skills cours
 </header>
 
 <!--
-<<<<<<< HEAD
-  <<< Author notes: Step 2 >>>
-=======
   <<< Author notes: Step 3 >>>
->>>>>>> 782113c8ff6f44989a9ca710309e17d8e6070cc0
   Start this step by acknowledging the previous step.
   Define terms and link to docs.github.com.
 -->
 
-<<<<<<< HEAD
-## Step 2: Removing a file from Git history using BFG Repo-Cleaner
-
-_You removed `.env` from the repository's root directory! :tada:_
-
-Now that we've deleted the file, people that browse the repository on GitHub.com or anyone looking at just the head commit won't see the file. However, due to Git's nature, the file is still present in the history. In this step, we'll work on removing the file from the repository history.
-
-**What is a _head commit_**? In Git, HEAD points to a branch or a commit. When we say [head commit](https://docs.github.com/en/get-started/quickstart/github-glossary#head), we usually mean the most recent commit in the repository's history.
-
-There are multiple tools available for removing Git history, we'll use BFG Repo-Cleaner in this step. You can find additional documentation on [Using the BFG in GitHub Docs](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/removing-sensitive-data-from-a-repository#using-the-bfg).
-
-**What is _BFG Repo-Cleaner_**? BFG Repo-Cleaner is software that can help you search through and alter repository history. Git can natively do this using [`git filter-repo`](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/removing-sensitive-data-from-a-repository#using-git-filter-repo), but it can be more complex.
-
-### :keyboard: Activity: Use BFG Repo-Cleaner to remove the `.env` file
-=======
 ## Step 3: Avoiding future commits with `.env`
 
 _Nice work removing the file from entire history of the repository! :sparkles:_
@@ -53,7 +34,6 @@ We'll now configure Git so it ignores a future addition of sensitive content by 
 **What is `.gitignore`?** This special file allows us to tell Git naming patterns to ignore. You can read more about it in [Ignoring files on GitHub Docs](https://docs.github.com/en/get-started/getting-started-with-git/ignoring-files).
 
 ### :keyboard: Activity: Add `.env` to `.gitignore`
->>>>>>> 782113c8ff6f44989a9ca710309e17d8e6070cc0
 
 1. Update the local copy of your repository to ensure you have the most recent version of the course files.
    ```shell
